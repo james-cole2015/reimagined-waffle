@@ -62,7 +62,9 @@ def names_func():
 
 
 def address_func():
-    pattern = re.compile("(\d{3})(\s)([0-9][a-z]+|[A-Z][a-z]+)(\s)(\w{2,9})([.,]+)(\s)([A-Z][a-z']+\s[A-Z][a-z-]+|[A-Z][a-z-]+)(\s)([A-Z]{2})(\s)(\d{5})")
+    pattern = re.compile("(\d{3})(\s)([0-9][a-z]+|[A-Z][a-z]+)(\s)(\w{2,9})" \
+                         "([.,]+)(\s)([A-Z][a-z']+\s[A-Z][a-z-]+|[A-Z][a-z-]+)" \
+                         "(\s)([A-Z]{2})(\s)(\d{5})")
     address_matches = pattern.finditer(_file)
 
     street_num_name_list = []
