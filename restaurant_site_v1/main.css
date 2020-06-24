@@ -1,0 +1,676 @@
+/* /////////////   SplashPage  \\\\\\\\\\\\ */
+
+.splashPage {
+    /* This uses a background image and making it cover the page*/
+    background: url("https://s3.us-east-2.amazonaws.com/brookscody.com/restaurant_site/img/landing_page.jpg");
+    background-size: cover;
+    /* opacity: 0.5; */
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+#splash_title {
+    font-family: "Caveat", cursive;
+    color: rgb(194, 178, 128);
+    font-size: 6rem;
+    text-align: center;
+    /* This adds a black outline to the text in this id */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.enterance_link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+    /* This adds a black outline to the text in this id */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.first_link {
+    text-align: center;
+}
+
+
+/* /////////////   MainPage  \\\\\\\\\\\\ */
+
+.home_page {
+    background-image: url("https://s3.us-east-2.amazonaws.com/brookscody.com/restaurant_site/img/main_dining.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+h2 {
+    background-color: lightskyblue;
+    text-align: center;
+    border: 0.5px black solid;
+    color: white;
+    opacity: 80%;
+    font-family: "Fjalla One", sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: left;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.welcome_header {
+    font-size: larger;
+    margin: 6rem;
+    color: lightcoral;
+}
+
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    border: 0.1px solid lightskyblue;
+    padding: 0.8rem;
+    text-align: center;
+    box-shadow: black 5px 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    background-color: rgb(73, 73, 73);
+    opacity: 80%;
+}
+
+.main-nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.index-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.left-box {
+    color: white;
+    margin: 1em;
+    opacity: 80%;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+    padding: 1em;
+    font-family: "Source Serif Pro", serif;
+}
+
+.right-box {
+    color: white;
+    margin: 1em;
+    opacity: 80%;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+    padding: 1em;
+    font-family: "Source Serif Pro", serif;
+}
+
+.photo-gallery-desc {
+    font-family: "Source Serif Pro", serif;
+    margin: 1em;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    text-align: center;
+    opacity: 80%;
+    padding: 1em;
+}
+
+.photo-gallery-photos {
+    grid-row: 2;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
+    transition: all 0.3s ease-in-out;
+}
+
+.photo-gallery-photos div {
+    width: 60%;
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+.photo-gallery-photos img {
+    display: block;
+    max-width: 100%;
+    margin: 1em;
+    border: whitesmoke 0.3px solid;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 5px 0.8px;
+    justify-content: center;
+    align-content: center;
+}
+
+.photo-gallery-photos img:hover {
+    transform: scale(1.7);
+}
+
+
+/* /////////////   Our Staff  \\\\\\\\\\\\ */
+
+.head_chef,
+.sous_chef,
+.exec_chef,
+.maitd,
+.banq_chef,
+.exped {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 20px;
+    order: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.5rem;
+    font-size: 36px;
+    background-color: rgb(142, 209, 231);
+    opacity: 80%;
+    box-shadow: black 5px 5px 5px 0.8px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* fddf */
+    background-color: lightskyblue;
+    border: 0.5px black solid;
+    color: white;
+    font-family: "Fjalla One", sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: left;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.bio {
+    order: 2;
+    text-align: center;
+    width: 50rem;
+    padding: 1em;
+    border-radius: 50px;
+    opacity: 90%;
+    margin-top: 1em;
+    font-size: 26px;
+    box-shadow: black 5px 5px 5px 0.8px;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.head_chef_photo {
+    order: 1;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 1rem;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+}
+
+.head_chef_photo img {
+    order: 1;
+    justify-self: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 10px;
+    height: 20em;
+}
+
+.exec_chef_photo {
+    order: 1;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 1rem;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+}
+
+.exec_chef_photo img {
+    order: 1;
+    justify-self: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 10px;
+    height: 20em;
+}
+
+.sous_chef_photo {
+    order: 1;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 1rem;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+}
+
+.sous_chef_photo img {
+    order: 1;
+    justify-self: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 10px;
+    height: 20em;
+}
+
+.banq_chef_photo {
+    order: 1;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 1rem;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+}
+
+.banq_chef_photo img {
+    order: 1;
+    justify-self: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 10px;
+    height: 20em;
+}
+
+.exped_photo {
+    order: 1;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 1rem;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+}
+
+.exped_photo img {
+    order: 1;
+    justify-self: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 10px;
+    height: 20em;
+}
+
+.maitd_photo {
+    order: 1;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 1rem;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+}
+
+.maitd_photo img {
+    order: 1;
+    justify-self: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 10px;
+    height: 20em;
+}
+
+
+/* /////////////   About Us  \\\\\\\\\\\\ */
+
+.about_us {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    margin: 1em;
+}
+
+.about_us p {
+    font-family: "Source Serif Pro", serif;
+    margin-left: 5px;
+}
+
+.about_us_photo {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-self: center;
+    align-items: center;
+}
+
+.about_us img {
+    /* display: block; */
+    max-width: 100%;
+    /* height: auto; */
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 5px 0.8px;
+}
+
+.about_us_info {
+    grid-column: 1;
+    opacity: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 90px;
+    box-shadow: black 5px 5px 5px 0.8px;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    padding: 1em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.restaurant_info {
+    grid-column: 1;
+    grid-row: 2;
+    opacity: 80%;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    box-shadow: black 5px 5px 5px 0.8px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 1em;
+    margin-right: 90px;
+}
+
+.press_info {
+    grid-column: 2;
+    grid-row: 2;
+    opacity: 80%;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 90px;
+    padding: 1em;
+}
+
+.press_info a {
+    text-transform: none;
+    font-family: "Source Serif Pro", serif;
+    border: 1px solid black;
+    padding: 3px;
+    margin-left: 5px;
+    color: white;
+    box-shadow: black 0.5px 0.5px 0.5px 0.5px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.press_info a:hover {
+    background-color: black;
+    color: white;
+}
+
+.press_info p {
+    margin-left: 5px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 65px;
+    box-shadow: black 0.5px 0.5px 0.5px 0.5px inset;
+    grid-row: 3;
+    grid-column: 1/4;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.address {
+    grid-row: 1;
+}
+
+.social-media {
+    grid-row: 2;
+    text-align: center;
+}
+
+.footer p {
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+.fa-twitter {
+    background: black;
+    color: white;
+}
+
+.fa-instagram {
+    background: black;
+    color: white;
+}
+
+
+/* /////////////   MENU  \\\\\\\\\\\\ */
+
+.menu_page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1em;
+}
+
+.menu_description {
+    color: white;
+    grid-column: 1;
+    opacity: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 90px;
+    box-shadow: black 5px 5px 5px 0.8px;
+    padding: 1em;
+    background-color: rgb(73, 73, 73);
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.mantra {
+    color: white;
+    grid-column: 2;
+    opacity: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 90px;
+    box-shadow: black 5px 5px 5px 0.8px;
+    padding: 1em;
+    background-color: rgb(73, 73, 73);
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.menu_page p {
+    font-family: "Source Serif Pro", serif;
+    margin-left: 5px;
+}
+
+.menu_photos {
+    grid-row: 2;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.menu_photos div {
+    display: block;
+    border-radius: 10px;
+    margin: 1em;
+    justify-self: center;
+    align-items: center;
+}
+
+.menu_photos img {
+    display: block;
+    max-width: 100%;
+    margin: 1em;
+    border: whitesmoke 0.3px solid;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 5px 0.8px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* .menu_photos img:hover {} */
+
+
+/* /////////////   Contact Info  \\\\\\\\\\\\ */
+
+.contact_page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    color: white;
+    opacity: 80%;
+}
+
+.contact_info {
+    margin: 1em;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+    padding: 1em;
+}
+
+.location_information {
+    margin: 1em;
+    background-color: rgb(73, 73, 73);
+    box-shadow: black 5px 5px 5px 0.8px;
+    padding: 1em;
+}
+
+.contact_page p {
+    font-family: "Source Serif Pro", serif;
+    margin-left: 5px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 1em;
+    justify-items: center;
+}
+
+.text-fields {
+    grid-row: 1;
+    margin-right: 4%;
+    background: transparent;
+    border: 0px;
+    color: white;
+}
+
+.input {
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid lightskyblue;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.msg {
+    grid-row: 2;
+    margin-right: 4%;
+    color: white;
+}
+
+.text-fields,
+.msg {
+    width: 48%;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.msg textarea {
+    height: 212px;
+    width: 300px;
+    background: transparent;
+    color: white;
+    border: 0px;
+    border-bottom: lightskyblue solid 2px;
+    padding: 5px;
+}
+
+.btn {
+    grid-row: 3;
+    grid-column: 1;
+    border: solid black 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.5em;
+    text-transform: uppercase;
+    font-family: "Source Serif Pro", serif;
+    padding: 10px;
+    background-color: lightskyblue;
+    border-radius: 2px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: whitesmoke;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: whitesmoke;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: whitesmoke;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.address,
+.hours {
+    text-align: center;
+}

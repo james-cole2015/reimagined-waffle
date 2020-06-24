@@ -1,0 +1,14 @@
+
+
+
+In a Grid to align the individual grid items horizontally: justify-self;
+    # make the cell move left to right
+
+In a Grid - to align all the grid items horizontally: justify-items
+    # make all the cells move left to right
+
+In a Grid - align all the grid items vertically: align-items
+    # make all the cells move top to bottom
+
+In a Grid to align the individual grid items vertically: align-self;
+    # make the cell move top to bottm
